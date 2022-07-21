@@ -1,0 +1,6 @@
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/runtime
+/env.php

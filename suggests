@@ -1,0 +1,42 @@
+league/flysystem suggests installing league/flysystem-eventable-filesystem (Allows you to use EventableFilesystem)
+league/flysystem suggests installing league/flysystem-rackspace (Allows you to use Rackspace Cloud Files)
+league/flysystem suggests installing league/flysystem-azure (Allows you to use Windows Azure Blob storage)
+league/flysystem suggests installing league/flysystem-webdav (Allows you to use WebDAV storage)
+league/flysystem suggests installing league/flysystem-aws-s3-v2 (Allows you to use S3 storage with AWS SDK v2)
+league/flysystem suggests installing league/flysystem-aws-s3-v3 (Allows you to use S3 storage with AWS SDK v3)
+league/flysystem suggests installing spatie/flysystem-dropbox (Allows you to use Dropbox storage)
+league/flysystem suggests installing srmklive/flysystem-dropbox-v2 (Allows you to use Dropbox storage for PHP 5 applications)
+league/flysystem suggests installing league/flysystem-cached-adapter (Flysystem adapter decorator for metadata caching)
+league/flysystem suggests installing league/flysystem-sftp (Allows you to use SFTP server storage via phpseclib)
+league/flysystem suggests installing league/flysystem-ziparchive (Allows you to use ZipArchive adapter)
+intervention/image suggests installing ext-imagick (to use Imagick based image processing.)
+intervention/image suggests installing intervention/imagecache (Caching extension for the Intervention Image library)
+kartik-v/yii2-grid suggests installing kartik-v/yii2-mpdf (For exporting grids to PDF)
+symfony/contracts suggests installing psr/cache (When using the Cache contracts)
+symfony/contracts suggests installing psr/container (When using the Service contracts)
+symfony/contracts suggests installing symfony/cache-contracts-implementation
+symfony/contracts suggests installing symfony/service-contracts-implementation
+symfony/translation suggests installing symfony/config
+guzzlehttp/guzzle suggests installing psr/log (Required for using the Log middleware)
+yiisoft/yii2-queue suggests installing pda/pheanstalk (Need for Beanstalk queue.)
+yiisoft/yii2-queue suggests installing php-amqplib/php-amqplib (Need for AMQP queue.)
+yiisoft/yii2-queue suggests installing enqueue/amqp-lib (Need for AMQP interop queue.)
+yiisoft/yii2-queue suggests installing ext-gearman (Need for Gearman queue.)
+yiisoft/yii2-queue suggests installing aws/aws-sdk-php (Need for aws SQS.)
+sebastian/global-state suggests installing ext-uopz (*)
+phpunit/phpunit suggests installing phpunit/php-invoker (^2.0)
+phpunit/phpunit suggests installing ext-soap (*)
+symfony/event-dispatcher suggests installing symfony/dependency-injection
+symfony/event-dispatcher suggests installing symfony/http-kernel
+symfony/console suggests installing symfony/lock
+symfony/console suggests installing psr/log (For using the console logger)
+codeception/base suggests installing aws/aws-sdk-php (For using AWS Auth in REST module and Queue module)
+codeception/base suggests installing codeception/phpbuiltinserver (Start and stop PHP built-in web server for your tests)
+codeception/base suggests installing flow/jsonpath (For using JSONPath in REST module)
+codeception/base suggests installing phpseclib/phpseclib (for SFTP option in FTP Module)
+codeception/base suggests installing league/factory-muffin (For DataFactory module)
+codeception/base suggests installing league/factory-muffin-faker (For Faker support in DataFactory module)
+codeception/base suggests installing symfony/phpunit-bridge (For phpunit-bridge support)
+codeception/base suggests installing stecman/symfony-console-completion (For BASH autocompletion)
+Package league/url is abandoned, you should avoid using it. Use league/uri instead.
+ 

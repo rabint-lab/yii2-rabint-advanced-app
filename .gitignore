@@ -1,0 +1,33 @@
+# Ides project files
+.idea
+nbproject
+.vscode
+.buildpath
+.project
+.settings
+env.php
+# windows thumbnail cache
+Thumbs.db
+
+/_bk
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+tests/_output/*
+tests/_support/_generated
+
+#vagrant folder
+/.vagrant
+*.lock
+/env.php

@@ -1,0 +1,147 @@
+{
+    "name": "rabint/starter-project",
+    "description": "rabint Yii 2 Project Template",
+    "type": "project",
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/base.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/attachment.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/contact.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/option.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/page.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/seo.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/stats.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/user.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/finance.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/pm.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/theme-coreui.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/theme-codebase.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@gitlab.com:rabint-yii/notify.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "ext-intl": "*",
+        "yiisoft/yii2": "~2.0.45",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "asofter/yii2-imperavi-redactor": ">=0.0.3@dev",
+        "yiisoft/yii2-redis": "^2.0",
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "rabint/base": "^1.0",
+        "rabint/attachment": "^1.0",
+        "rabint/contact": "^1.0",
+        "rabint/option": "^1.0",
+        "rabint/page": "^1.0",
+        "rabint/user": "^1.0",
+        "rabint/notify": "^1.0",
+        "rabint/stats": "^1.0",
+        "rabint/pm": "^1.0",
+        "rabint/seo": "^1.0",
+        "rabint/theme-coreui": "^1.0",
+        "npm-asset/font-awesome": "^5.7",
+        "trntv/yii2-command-bus": "^3.0",
+        "intervention/image": "^2.4",
+        "kartik-v/yii2-widget-select2": "@dev",
+        "league/flysystem": "^1.0",
+        "npm-asset/leaflet": "^1.4",
+        "npm-asset/chart.js": "^2.7",
+        "kartik-v/yii2-bootstrap4-dropdown": "@dev",
+        "phpoffice/phpspreadsheet": "^1.7",
+		"moonlandsoft/yii2-phpexcel": "*",
+        "kartik-v/yii2-widget-activeform": "@dev",
+        "bigbluebutton/bigbluebutton-api-php": "~2.0.0",
+        "yiisoft/yii2-symfonymailer": "~2.0.3"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "~2.2.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "phpunit/phpunit": "*",
+        "codeception/codeception": "*",
+        "codeception/lib-innerbrowser": "*",
+        "codeception/module-asserts": "*",
+        "codeception/module-yii2": "*",
+        "codeception/module-filesystem": "*",
+        "codeception/verify": "*",
+        "symfony/browser-kit": "^6.0 || >=2.7 <=4.2.4",
+        "bizley/migration": "^4.3"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "yii\\composer\\Installer::postInstall"
+        ],
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject",
+            "yii\\composer\\Installer::postInstall"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [{
+                "runtime": "0777",
+                "web/assets": "0777",
+                "yii": "0755"
+            }]
+        },
+        "yii\\composer\\Installer::postInstall": {
+            "generateCookieValidationKey": [
+                "config/web.php"
+            ]
+        }
+    }
+}
