@@ -9,7 +9,7 @@ Rabint Yii2 starter kit
 ----------------------------------
 
 
-#how to install:
+### how to install:
 
 1. download OR clone with git
 ```
@@ -31,8 +31,20 @@ php composer.phar install
 5. apply migrations : ``` $ php yii migrate```
 5. apply migrations : ``` $ php yii rbac-migrate```
 
+### login to admin
 
-###env customize per app
+1. goto login page : maybe ```http://localhost/sample-app/login```
+2. login data:
+
+| username | password |
+| ------ | ------ |
+| webmaster | secret_webmaster |
+| manager | secret_manager |
+| user | secret_user |
+
+
+
+### env customize per app
 
 you can copy `_env` folder to `app_folder/_env`
 
@@ -48,7 +60,7 @@ include hierarchy:
 
 
 
-###migration generate
+### migration generate
 
 $ php yii migrate-generate/create [table_name]
 
