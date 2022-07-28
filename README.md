@@ -17,7 +17,7 @@ git clone https://gitlab.com/rabint-yii/sample-app.git
 ```
 Or create with composer:
 ```
-composer create-project rabint-lab/yii2-rabint-advanced-app path --repository-url=git@github.com:rabint-lab/yii2-rabint-advanced-app.git
+composer create-project rabint/advanced-app rabint-advanced-app
 ```
 
 2. composer install
