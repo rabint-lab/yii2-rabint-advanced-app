@@ -13,7 +13,7 @@ Rabint Yii2 starter kit
 
 1. download OR clone with git
 ```
-git clone https://gitlab.com/rabint-yii/sample-app.git
+https://github.com/rabint-lab/yii2-rabint-advanced-app.git
 ```
 Or create with composer:
 ```
